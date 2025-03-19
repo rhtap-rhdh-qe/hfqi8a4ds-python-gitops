@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: hfqi8a4ds-python-gitops
+  description: This is GitOps manifest for hfqi8a4ds-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=hfqi8a4ds-python
+    backstage.io/kubernetes-id: hfqi8a4ds-python 
+    backstage.io/techdocs-ref: dir:. 
+    janus-idp.io/tekton: hfqi8a4ds-python   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:hfqi8a4ds-python

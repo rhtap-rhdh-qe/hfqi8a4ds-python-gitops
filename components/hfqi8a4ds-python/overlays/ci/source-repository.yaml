@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: hfqi8a4ds-python-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/hfqi8a4ds-python
